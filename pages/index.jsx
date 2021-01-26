@@ -14,9 +14,6 @@ export default function Home() {
           Pegasus  <span className={styles.tv}>TV</span>
         </h1>
         <div className={styles.menu}>
-          {/* <a href="#">
-            Resumo
-          </a> */}
         </div>
       </header>
 
@@ -37,6 +34,8 @@ export default function Home() {
         <source src="/video.mp4" type="video/mp4"></source>
 
        </video>
+
+       <img src="https://www.sorteiefb.com.br/images/promocoes/722491.900x350.jpg" alt=""/>
       </main>
       <h1 className={styles.title}>
         solicite um <br/> teste grátis
