@@ -1,5 +1,6 @@
 .container {
   min-height: 100vh;
+  width: 100vw;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -7,116 +8,162 @@
   align-items: center;
 }
 
+.header {
+  width: 100vw;
+  padding: 1em 5em;
+  display: flex;
+  background: #121013;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header .logo {
+  letter-spacing: 0.3em;
+  cursor: pointer;
+  font-family: 'Bebas Neue';
+}
+
+.header .logo .tv{
+  color: #eb596e;
+}
+
+.header .menu a{
+  margin: 0 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .main {
-  padding: 5rem 0;
+  padding-bottom: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  background: #121013;
 }
 
 .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: #DEC328;
+  text-transform: uppercase;
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+  font-size: 1.8rem;
   text-align: center;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+.button {
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 150px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  outline: none;
+  background-color: #FDF733;
+  color: #000;
+  border: none;
+  position: absolute;
+  cursor: pointer;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.cards {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  max-width: 70%;
+  padding: 2em 0 5em 0;
   flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.cards .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  text-align: center;
+  padding: 1em;
+  background: #0a043c;
+  color: #fff;
+  margin: 0 50px 40px 0;
+  margin-right: 50px;
+  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.cards .card .titleCard{
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.cards .card .description{
+  font-size: 0.9em;
+  color: #c5bcbc;
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 
-.card p {
+.cards .card .buttonInfo {
+  background-color: #03506f;
+  border: none;
+  color: #fff;
+  padding: 15px 0;
+  width: 130px;
+  font-size: 1em;
+  outline: none;
+  cursor: pointer;
+  bottom: 0;
+}
+
+
+.cards:last-child{
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
+@media(max-width: 988px){
+  .title {
+    top: 30%;
+  }
+  
+  .button {
+    top: 20%;
+  }
+  .main {
+    background: #fff;
+  }
+  
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media(max-width: 615px){
+  .title {
+    top: 20%;
+  }
+  
+  .button {
+    top: 10%;
+  }
+}
+
+@media(max-width: 370px){
+  .header .logo {
+    font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 1.5em;
+    top: 14%;
+  }
+
+  .button {
+    top: 4%;
   }
 }
