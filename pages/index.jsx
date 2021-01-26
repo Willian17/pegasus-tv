@@ -42,7 +42,7 @@ export default function Home() {
         solicite um <br/> teste grátis
       </h1>
 
-      <a href="https://api.whatsapp.com/send?phone=556697140828&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV" className={styles.button}>
+      <a href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV" className={styles.button}>
         Teste Grátis
       </a>
 
@@ -55,7 +55,7 @@ export default function Home() {
            Canais de TV Fechada e Aberta em HD, Filmes e Séries pelo menor preço.
           </p>
           <a 
-            href="https://api.whatsapp.com/send?phone=556697140828&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
+            href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
             className={styles.buttonInfo}
             >
             Saiba Mais
@@ -70,7 +70,7 @@ export default function Home() {
            A partir de R$35,00 reais mensais, você poderá usufruir do melhor do IPTV na tela de sua TV, smartphone e TVBox.
           </p>
           <a 
-            href="https://api.whatsapp.com/send?phone=556697140828&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
+            href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
             className={styles.buttonInfo}
             >
             Saiba Mais
@@ -85,7 +85,7 @@ export default function Home() {
             Só aqui você tem qualidade, estabilidade e suporte.
           </p>
           <a 
-            href="https://api.whatsapp.com/send?phone=556697140828&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
+            href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
             className={styles.buttonInfo}
             >
             Saiba Mais
