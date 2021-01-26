@@ -153,17 +153,27 @@
   }
 }
 
-@media(max-width: 370px){
+@media(max-width: 380px){
   .header .logo {
     font-size: 1.5em;
+    text-align: center;
   }
 
+
   .title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     top: 14%;
   }
 
   .button {
     top: 4%;
+  }
+
+  .cards {
+    max-width: 90%;
+  }
+
+  .cards .card{
+    margin: 15px 0;
   }
 }
