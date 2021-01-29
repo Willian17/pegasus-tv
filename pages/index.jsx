@@ -45,7 +45,7 @@ export default function Home() {
         solicite um <br/> teste grátis
       </h1>
 
-      <a href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV" className={styles.button}>
+      <a href="https://api.whatsapp.com/send?phone=14632343959&text=Ol%C3%A1,%20estou%20interessado,%20e%20quero%20fazer%20o%20teste%20gr%C3%A1tis%20de%203%20horas" className={styles.button}>
         Teste Agora
       </a>
 
@@ -59,7 +59,7 @@ export default function Home() {
            Todos canais de TV, Filmes e Séries em HD, apenas com acesso a internet.
           </p>
           <a 
-            href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
+            href="https://api.whatsapp.com/send?phone=14632343959&text=Ol%C3%A1,%20estou%20interessado,%20e%20quero%20fazer%20o%20teste%20gr%C3%A1tis%20de%203%20horas"
             className={styles.buttonInfo}
             >
             Saiba Mais
@@ -74,7 +74,7 @@ export default function Home() {
            A partir de R$35,00 reais mensais, sem fidelidade.
           </p>
           <a 
-            href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
+            href="https://api.whatsapp.com/send?phone=14632343959&text=Ol%C3%A1,%20estou%20interessado,%20e%20quero%20fazer%20o%20teste%20gr%C3%A1tis%20de%203%20horas"
             className={styles.buttonInfo}
             >
             Saiba Mais
@@ -89,7 +89,7 @@ export default function Home() {
             Atendimento rápido e especializado via Whatsapp.
           </p>
           <a 
-            href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
+            href="https://api.whatsapp.com/send?phone=14632343959&text=Ol%C3%A1,%20estou%20interessado,%20e%20quero%20fazer%20o%20teste%20gr%C3%A1tis%20de%203%20horas"
             className={styles.buttonInfo}
             >
             Saiba Mais
