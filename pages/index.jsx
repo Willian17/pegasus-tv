@@ -111,7 +111,7 @@ export default function Home() {
 
           <div className={styles.card}>
             <GiTv size="50"/>
-            <h1 className={styles.category}> TV: <span className={styles.detail}> Smart TV, <br /> TV BOX e diversas. </span></h1> 
+            <h1 className={styles.category}> TV: <span className={styles.detail}> Smart TV, TV BOX e diversas. </span></h1> 
           </div>
 
           <div className={styles.card}>
