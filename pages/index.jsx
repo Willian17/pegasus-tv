@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { GiPc, GiTv, GiSmartphone } from 'react-icons/gi'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Pegasus TV</title>
+        <title> 
+          Pegasus TV
+
+        </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -42,16 +46,17 @@ export default function Home() {
       </h1>
 
       <a href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV" className={styles.button}>
-        Teste Grátis
+        Teste Agora
       </a>
 
-      <section className={styles.cards}>
+      <section className={styles.sectionInfo}>
+        <div className={styles.cards}>
         <div className={styles.card}>
           <h1 className={styles.titleCard}>
             Serviços
           </h1>
           <p className={styles.description}>
-           Canais de TV Fechada e Aberta em HD, Filmes e Séries pelo menor preço.
+           Todos canais de TV, Filmes e Séries em HD, apenas com acesso a internet.
           </p>
           <a 
             href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
@@ -66,7 +71,7 @@ export default function Home() {
             Preços
           </h1>
           <p className={styles.description}>
-           A partir de R$35,00 reais mensais, você poderá usufruir do melhor do IPTV na tela de sua TV, smartphone e TVBox.
+           A partir de R$35,00 reais mensais, sem fidelidade.
           </p>
           <a 
             href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
@@ -78,10 +83,10 @@ export default function Home() {
 
         <div className={styles.card}>
           <h1 className={styles.titleCard}>
-            Clientes
+            Suporte
           </h1>
           <p className={styles.description}>
-            Só aqui você tem qualidade, estabilidade e suporte.
+            Atendimento rápido e especializado via Whatsapp.
           </p>
           <a 
             href="https://api.whatsapp.com/send?phone=14632343959&text=ol%C3%A1,%20estou%20interessado%20no%20servi%C3%A7o%20IPTV%20da%20Pegasus%20TV"
@@ -91,6 +96,36 @@ export default function Home() {
           </a>
         </div>
 
+        </div>
+        
+
+      </section>
+
+      <section className={styles.sectionDispositivos}>
+        <div>
+          <h1 className={styles.titleDispositivo}>A melhor lista IPTV do Brasil</h1>
+          <h2 className={styles.subtitleDispositivo}>Compatível com diversos aparelhos</h2>
+        </div>
+
+        <div className={styles.cards}>
+
+          <div className={styles.card}>
+            <GiTv size="50"/>
+            <h1 className={styles.category}> TV: <span className={styles.detail}> Smart TV, <br /> TV BOX e diversas. </span></h1> 
+          </div>
+
+          <div className={styles.card}>
+            <GiPc size="50"/>
+            <h1 className={styles.category}> DESKTOP: <span className={styles.detail}>PC, Notebook, Chromecast. </span></h1> 
+          </div>
+
+          <div className={styles.card}>
+            <GiSmartphone size="50"/>
+            <h1 className={styles.category}>  SMARTPHONE: <span className={styles.detail}> Android ou IOS </span></h1> 
+          </div>
+
+        </div>
+        
       </section>
 
     </div>

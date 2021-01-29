@@ -19,10 +19,20 @@
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.header .logo {
+.header .logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.header .logoContainer .logo {
   letter-spacing: 0.3em;
   cursor: pointer;
   font-family: 'Bebas Neue';
+}
+
+
+.header .logoContainer .logo img {
+  display: inline;
 }
 
 .header .logo .tv{
@@ -36,7 +46,6 @@
 }
 
 .main {
-  padding-bottom: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -93,16 +102,23 @@
   color: #FDF733;
 }
 
-.cards {
+.sectionInfo{
+  width: 100%;
+  background-color: #252525;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionInfo .cards {
   display: flex;
   justify-content: space-around;
   align-items: center;
   max-width: 70%;
-  padding: 2em 0 5em 0;
+  padding: 5em 0 5em 0;
   flex-wrap: wrap;
 }
 
-.cards .card{
+.sectionInfo .cards .card{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,28 +126,30 @@
   max-width: 300px;
   text-align: center;
   padding: 1em;
-  background: #0a043c;
+  background: #3a3a3a;
   color: #fff;
   margin: 0 50px 40px 0;
   margin-right: 50px;
-  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
-.cards .card .titleCard{
+.sectionInfo .cards .card .titleCard{
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #fff;
 }
 
-.cards .card .description{
+.sectionInfo .cards .card .description{
   font-size: 0.9em;
-  color: #c5bcbc;
+  color: #beb5b5;
   margin-bottom: 30px;
   font-weight: 300;
 }
 
-.cards .card .buttonInfo {
-  background-color: #03506f;
+.sectionInfo .cards .card .buttonInfo {
+  background-color: #4b5566;
   border: none;
   color: #fff;
   padding: 15px 0;
@@ -143,9 +161,75 @@
 }
 
 
-.cards:last-child{
+.sectionInfo .cards:last-child{
   margin: 0;
 }
+
+.sectionDispositivos {
+  width: 100%;
+  background-color: #423f3f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10em 2em 2em 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.sectionDispositivos .titleDispositivo {
+  letter-spacing: 0.2em;
+  font-size: 3.5em;
+  color: #f1eeee;
+}
+.sectionDispositivos .subtitleDispositivo {
+  letter-spacing: 0.2em;
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #d3cfcf;
+}
+
+.sectionDispositivos .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 70%;
+  padding: 5em 0 5em 0;
+  flex-wrap: wrap;
+}
+
+.sectionDispositivos .cards .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 350px;
+  text-align: center;
+  padding: 2em 5em;
+  background: #575353;
+  color: #fff;
+  margin: 0 50px 40px 0;
+  margin-right: 50px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.sectionDispositivos .cards .card svg {
+  margin-bottom: 20px;
+}
+
+.sectionDispositivos .cards .card .category {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.sectionDispositivos .cards .card .category .detail {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+
+
+
 
 @media(max-width: 988px){
   .title {
@@ -165,25 +249,26 @@
   .title {
     top: 30%;
     color: #fff;
-
   }
   
   .button {
     top: 20%;
   }
 
-  .cards .card{
+  .sectionInfo .cards .card{
     margin: 15px 0;
   }
 
   .header{
     justify-content: center;
   }
-
+  .main {
+    background: rgb(151, 26, 26);
+  }
   .main img {
     display: block;
     width: 100%;
-    filter: drop-shadow(8px 1px 10px red) blur(1px);
+    filter: drop-shadow(0px 1px 10px red) opacity(60%);
   }
   .main video{
     display: none;
@@ -206,11 +291,11 @@
     top: 10%;
   }
 
-  .cards {
+  .sectionInfo .cards {
     max-width: 90%;
   }
 
-  .cards .card{
+  .sectionInfo .cards .card{
     margin: 15px 0;
   }
 }
