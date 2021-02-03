@@ -19,4 +19,16 @@ a {
   box-sizing: border-box;
 }
 
-
+:root {
+  --color-primary: #eb596e;
+  --color-title: #ffd900;
+  --color-subtitle: #949393;
+  --color-dark: #000;
+  --color-border: #ededed;
+  --color-text: #777777;
+  --color-shadow: rgb(0 0 0 / 10%);
+  --bg-primary: #ffffff;
+  --bg-secundary: #f5f5f5;
+  --bg-button: #FDF733;
+  --bg-dark-button: #000;
+}

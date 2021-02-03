@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { GiPc, GiTv, GiSmartphone } from 'react-icons/gi'
+import { FaBatteryQuarter, FaBatteryHalf, FaBatteryThreeQuarters, FaBatteryFull } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -110,22 +111,95 @@ export default function Home() {
         <div className={styles.cards}>
 
           <div className={styles.card}>
-            <GiTv size="50"/>
+            <GiTv size="50" color="eccc16"/>
             <h1 className={styles.category}> TV: <span className={styles.detail}> Smart TV, TV BOX e diversas. </span></h1> 
           </div>
 
           <div className={styles.card}>
-            <GiPc size="50"/>
+            <GiPc size="50"  color="eccc16"/>
             <h1 className={styles.category}> DESKTOP: <span className={styles.detail}>PC, Notebook, Chromecast. </span></h1> 
           </div>
 
           <div className={styles.card}>
-            <GiSmartphone size="50"/>
+            <GiSmartphone size="50"  color="eccc16"/>
             <h1 className={styles.category}>  SMARTPHONE: <span className={styles.detail}> Android ou IOS </span></h1> 
           </div>
 
         </div>
         
+      </section>
+
+      <section className={styles.sectionPlans}>
+        <h1 className={styles.titlePlan}>
+          Planos
+        </h1>
+        <div className={styles.cards}>
+          <div className={styles.card}>
+            <div className={styles.headerPlan}>
+              <FaBatteryQuarter color="FDF733" size="100" />
+              <h1 className={styles.titleCard}>Mensal</h1>
+            </div>
+            <ul className={styles.list}>
+              <li>GRADE COM + DE 2.000</li>
+              <li>QUALIDADE SD/HD/FULL HD</li>
+              <li>CONTEÚDOS ONLINE DIGITAL</li>
+              <li>1 TELA (CONEXÕES MÁXIMAS)</li>
+              <li>MAIS TELAS? CONSULTE</li>
+            </ul>
+            <h3 className={styles.price}>R$ <span className={styles.numberPrice}>34,99</span></h3>
+            <button className={styles.buttonPlan}>Assinar</button>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.headerPlan}>
+              <FaBatteryHalf color="FDF733" size="100" />
+              <h1 className={styles.titleCard}>TRIMESTRAL</h1>
+            </div>
+            <ul className={styles.list}>
+              <li>GRADE COM + DE 2.000</li>
+              <li>QUALIDADE SD/HD/FULL HD</li>
+              <li>CONTEÚDOS ONLINE DIGITAL</li>
+              <li>1 TELA (CONEXÕES MÁXIMAS)</li>
+              <li>MAIS TELAS? CONSULTE</li>
+            </ul>
+            <h3 className={styles.price}>R$ <span className={styles.numberPrice}>89,99</span></h3>
+            <button className={styles.buttonPlan}>Assinar</button>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.headerPlan}>
+             <FaBatteryThreeQuarters color="FDF733" size="100" />
+              <h1 className={styles.titleCard}>SEMESTRAL</h1>
+            </div>
+            <ul className={styles.list}>
+              <li>GRADE COM + DE 2.000</li>
+              <li>QUALIDADE SD/HD/FULL HD</li>
+              <li>CONTEÚDOS ONLINE DIGITAL</li>
+              <li>1 TELA (CONEXÕES MÁXIMAS)</li>
+              <li>MAIS TELAS? CONSULTE</li>
+            </ul>
+            <h3 className={styles.price}>R$ <span className={styles.numberPrice}>169,99</span></h3>
+            <button className={styles.buttonPlan}>Assinar</button>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.headerPlan}>
+              <FaBatteryFull color="FDF733" size="100" />
+              <h1 className={styles.titleCard}>ANUAL</h1>
+            </div>
+            <ul className={styles.list}>
+              <li>GRADE COM + DE 2.000</li>
+              <li>QUALIDADE SD/HD/FULL HD</li>
+              <li>CONTEÚDOS ONLINE DIGITAL</li>
+              <li>1 TELA (CONEXÕES MÁXIMAS)</li>
+              <li>MAIS TELAS? CONSULTE</li>
+            </ul>
+            <h3 className={styles.price}>R$ <span className={styles.numberPrice}>319,99</span></h3>
+            <button className={styles.buttonPlan}>Assinar</button>
+          </div>
+
+
+        </div>
       </section>
 
     </div>

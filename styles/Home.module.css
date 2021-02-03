@@ -1,3 +1,4 @@
+
 .container {
   min-height: 100vh;
   width: 100vw;
@@ -31,7 +32,7 @@
 }
 
 .header .logo .tv{
-  color: #eb596e;
+  color: var(--color-primary);
 }
 
 .header .menu a{
@@ -60,7 +61,7 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  color: #DEC328;
+  color: var(--color-title);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 0;
@@ -80,26 +81,26 @@
   width: 150px;
   padding: 10px;
   outline: none;
-  background-color: #FDF733;
+  background-color: var(--bg-button);
   transition: all 0.5s;
-  color: #000;
+  color: var(--color-dark);
   border: none;
   position: absolute;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #000;
-  color: #FDF733;
+  background-color: var(--bg-dark-button);
+  color: var(--bg-button);
 }
 .button:active {
-  background-color: #000;
-  color: #FDF733;
+  background-color: var(--bg-dark-button);
+  color: var(--bg-button);
 }
 
 .sectionInfo{
   width: 100%;
-  background-color: #252525;
+  background-color: var(--bg-primary);
   display: flex;
   justify-content: center;
 }
@@ -121,11 +122,11 @@
   max-width: 300px;
   text-align: center;
   padding: 1em;
-  background: #3a3a3a;
-  color: #fff;
+  background: var(--bg-primary);
   margin: 0 50px 40px 0;
   margin-right: 50px;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 6px 20px 0px var(--color-shadow);
   border-radius: 5px;
 }
 
@@ -133,20 +134,20 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--color-primary);
 }
 
 .sectionInfo .cards .card .description{
   font-size: 0.9em;
-  color: #beb5b5;
+  color: var(--color-text);
   margin-bottom: 30px;
   font-weight: 300;
 }
 
 .sectionInfo .cards .card .buttonInfo {
-  background-color: #4b5566;
+  background-color: var(--color-primary);
   border: none;
-  color: #fff;
+  color: var(--bg-primary);
   padding: 15px 0;
   width: 130px;
   font-size: 1em;
@@ -162,25 +163,25 @@
 
 .sectionDispositivos {
   width: 100%;
-  background-color: #423f3f;
+  background-color: var(--bg-secundary);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10em 2em 2em 2em;
-  color: #fff;
+  color: var(--color-primary);
   text-align: center;
 }
 
 .sectionDispositivos .titleDispositivo {
   letter-spacing: 0.2em;
   font-size: 3.5em;
-  color: #f1eeee;
+  color: var(--color-title);
 }
 .sectionDispositivos .subtitleDispositivo {
   letter-spacing: 0.2em;
   font-size: 1.2em;
   margin-top: 15px;
-  color: #d3cfcf;
+  color: var(--color-subtitle);
 }
 
 .sectionDispositivos .cards {
@@ -201,11 +202,12 @@
   max-width: 350px;
   text-align: center;
   padding: 2em 5em;
-  background: #575353;
-  color: #fff;
+  background: var(--bg-primary);
+  color: var(--color-text);
   margin: 0 50px 40px 0;
   margin-right: 50px;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 6px 20px 0px var(--color-shadow);
   border-radius: 5px;
 }
 
@@ -221,6 +223,111 @@
   font-weight: 500;
   font-size: 0.9em;
 }
+
+.sectionPlans {
+  width: 100%;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7em 2em 2em 2em;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.sectionPlans .titlePlan {
+  font-size: 4.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-title);
+}
+
+.sectionPlans .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 5em 0 5em 0;
+  flex-wrap: wrap;
+}
+
+.sectionPlans .cards .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  text-align: center;
+  background: var(--bg-primary);
+  color: var(--color-text);
+  margin: 0 35px 40px 0;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 6px 20px 0px var(--color-shadow);
+  border-radius: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.sectionPlans .cards .card .headerPlan {
+ margin-bottom: 30px;
+}
+
+.sectionPlans .cards .card .headerPlan .titleCard {
+  color: var(--color-title);
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sectionPlans .cards .card .list {
+  padding-bottom: 32px;
+}
+
+.sectionPlans .cards .card .list li {
+  list-style: none;
+  padding: 1em 2em;
+  border-top: 1px solid var(--color-border);
+}
+
+.sectionPlans .cards .card .list li:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sectionPlans .cards .card .price {
+  font-size: 1.6em;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.sectionPlans .cards .card .numberPrice {
+  font-size: 2.3em;
+  color: var(--color-title);
+  font-weight: bold;
+}
+
+.sectionPlans .cards .card .buttonPlan {
+  width: 100%;
+  padding: 1.3em 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: var(--bg-button);
+  color: var(--color-dark);
+  cursor: pointer;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transition: all 0.5s;
+}
+
+.sectionPlans .cards .card .buttonPlan:hover {
+  background-color: var(--color-dark);
+  color: var(--bg-button);
+}
+
+
 
 
 
