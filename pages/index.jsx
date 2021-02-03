@@ -136,7 +136,7 @@ export default function Home() {
         <div className={styles.cards}>
           <div className={styles.card}>
             <div className={styles.headerPlan}>
-              <FaBatteryQuarter color="FDF733" size="100" />
+              <FaBatteryQuarter color="ffd900" size="100" />
               <h1 className={styles.titleCard}>Mensal</h1>
             </div>
             <ul className={styles.list}>
@@ -147,12 +147,12 @@ export default function Home() {
               <li>MAIS TELAS? CONSULTE</li>
             </ul>
             <h3 className={styles.price}>R$ <span className={styles.numberPrice}>34,99</span></h3>
-            <button className={styles.buttonPlan}>Assinar</button>
+            <a href="https://api.whatsapp.com/send?phone=14632343959&text=Ol%C3%A1,%20estou%20interessado,%20e%20quero%20fazer%20o%20teste%20gr%C3%A1tis%20de%203%20horas" className={styles.buttonPlan}>Assinar</a>
           </div>
 
           <div className={styles.card}>
             <div className={styles.headerPlan}>
-              <FaBatteryHalf color="FDF733" size="100" />
+              <FaBatteryHalf color="ffd900" size="100" />
               <h1 className={styles.titleCard}>TRIMESTRAL</h1>
             </div>
             <ul className={styles.list}>
@@ -163,12 +163,12 @@ export default function Home() {
               <li>MAIS TELAS? CONSULTE</li>
             </ul>
             <h3 className={styles.price}>R$ <span className={styles.numberPrice}>89,99</span></h3>
-            <button className={styles.buttonPlan}>Assinar</button>
+            <a href="https://api.whatsapp.com/send?phone=14632343959&text=Ol%C3%A1,%20estou%20interessado,%20e%20quero%20fazer%20o%20teste%20gr%C3%A1tis%20de%203%20horas" className={styles.buttonPlan}>Assinar</a>
           </div>
 
           <div className={styles.card}>
             <div className={styles.headerPlan}>
-             <FaBatteryThreeQuarters color="FDF733" size="100" />
+             <FaBatteryThreeQuarters color="ffd900" size="100" />
               <h1 className={styles.titleCard}>SEMESTRAL</h1>
             </div>
             <ul className={styles.list}>
@@ -179,12 +179,12 @@ export default function Home() {
               <li>MAIS TELAS? CONSULTE</li>
             </ul>
             <h3 className={styles.price}>R$ <span className={styles.numberPrice}>169,99</span></h3>
-            <button className={styles.buttonPlan}>Assinar</button>
+            <a href="https://api.whatsapp.com/send?phone=14632343959&text=Ol%C3%A1,%20estou%20interessado,%20e%20quero%20fazer%20o%20teste%20gr%C3%A1tis%20de%203%20horas" className={styles.buttonPlan}>Assinar</a>
           </div>
 
           <div className={styles.card}>
             <div className={styles.headerPlan}>
-              <FaBatteryFull color="FDF733" size="100" />
+              <FaBatteryFull color="ffd900" size="100" />
               <h1 className={styles.titleCard}>ANUAL</h1>
             </div>
             <ul className={styles.list}>
@@ -195,7 +195,7 @@ export default function Home() {
               <li>MAIS TELAS? CONSULTE</li>
             </ul>
             <h3 className={styles.price}>R$ <span className={styles.numberPrice}>319,99</span></h3>
-            <button className={styles.buttonPlan}>Assinar</button>
+            <a href="https://api.whatsapp.com/send?phone=14632343959&text=Ol%C3%A1,%20estou%20interessado,%20e%20quero%20fazer%20o%20teste%20gr%C3%A1tis%20de%203%20horas" className={styles.buttonPlan}>Assinar</a>
           </div>
 
 

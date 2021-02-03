@@ -134,7 +134,7 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-primary);
+  color: var(--color-title);
 }
 
 .sectionInfo .cards .card .description{
@@ -145,9 +145,9 @@
 }
 
 .sectionInfo .cards .card .buttonInfo {
-  background-color: var(--color-primary);
+  background-color: var(--bg-button);
   border: none;
-  color: var(--bg-primary);
+  color: var(--color-dark);
   padding: 15px 0;
   width: 130px;
   font-size: 1em;
@@ -320,6 +320,7 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   transition: all 0.5s;
+  outline: none;
 }
 
 .sectionPlans .cards .card .buttonPlan:hover {
